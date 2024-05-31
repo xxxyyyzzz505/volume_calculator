@@ -1,9 +1,7 @@
 program sphere_volume
 use volume_calculator
 implicit none
-
     real :: radius, volume
-    character(len=25) :: error = "Invalid radius value!"
 
     print *, "What's the radius of sphere?"
     read (*,*) radius
