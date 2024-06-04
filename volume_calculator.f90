@@ -1,10 +1,10 @@
 module volume_calculator  
 implicit none 
-   real, parameter,private :: pi = 3.1415926536  
+   real, parameter, private :: pi = 3.14159265358979323846 
 
 contains      
     subroutine sphere_volume_calculator(radius, volume)          
-        real :: radius, volume, zero
+        real (kind = 8) :: radius, volume, zero
         zero = 0.0 
         if (radius <= 0) then 
             volume = zero / zero  

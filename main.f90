@@ -1,7 +1,7 @@
 program sphere_volume
 use volume_calculator
 implicit none
-    real :: radius, volume
+    real (kind = 8) :: radius, volume
     character(len=100) :: input
     logical :: is_real
     integer :: ios
